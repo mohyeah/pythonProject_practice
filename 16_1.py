@@ -17,5 +17,5 @@ courses = ['语文', '数学', '英语']
 scores = [[None] * len(courses) for _ in range(len(names))]
 for row, name in enumerate(names):
     for col, course in enumerate(courses):
-        scores[row][col] = float(input(f'{name}\'s {course}:'))
+        scores[row][col] = int(input(f'{name}\'s {course}:'))
 print(scores)
