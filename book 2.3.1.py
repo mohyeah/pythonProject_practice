@@ -17,7 +17,8 @@ def test4():
 
 def test_time(test):
     t1 = time.time()
-    test()
+    for i in range(1000):
+        test()
     t2 = time.time()
     print(t2-t1)
 
