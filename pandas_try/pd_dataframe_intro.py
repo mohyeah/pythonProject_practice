@@ -62,4 +62,4 @@ print(df4.head())
 print(df4.tail())   #默认前/后5行
 '''
 
-print(df6.shift(periods=2, axis=0,))
+print(df6.shift(periods=2, freq=None, axis=0, ))
