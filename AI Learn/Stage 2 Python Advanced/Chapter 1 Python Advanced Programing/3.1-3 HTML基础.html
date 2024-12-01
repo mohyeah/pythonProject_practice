@@ -7,7 +7,7 @@
 </head>
 <body>
     一个网页整体都是由HTML标签组成,有html, head, body标签
-    <br>
+    <br></br>
     标签:双标签,<!--<head> </head>-->
         单标签 <!--<br> <img> <hr>-->
 
@@ -32,6 +32,133 @@
     <img src="Dimo test image.gif" alt = "Dimo">
     <h3>h3标题标签</h3>
 
+
+    <h1>HTML基础</h1>
+    <p>
+        <h2>列表标签:ul,ol</h2>
+        <p>
+            <div>
+                <h3>无序列表</h3>
+                <ul>
+                    <li>无序列表1</li><!--默认为圆点-->
+                    <li>无序列表2</li>
+                    <li>无序列表3</li>
+                </ul>
+            </div>
+            <div>
+                <h3>有序列表</h3>
+                <ol>
+                    <li><a href="https://cn.bing.com">bing搜索</a></li> <!--嵌套实现超链接-->
+                    <li>有序列表2</li>
+                    <li>有序列表3</li>
+                </ol>
+            
+        </p>
+        <h2>表格标签:table</h2>
+        <p>
+            <div>
+                <h3>表格</h3>
+                <table border="1" width="10" cellspacing="0" cellpadding="10">
+                    <tr>    <!--表格行-->
+                        <th>姓名</th>   <!--表头, 文字居中,字体加大加粗-->
+                        <th>年龄</th>
+                        <th>性别</th>
+                    </tr>
+                    <tr>
+                        <td>张三</td>   <!--表格数据单元格-->
+                        <td>18</td>
+                        <td>男</td>
+                    </tr>
+                    <tr>
+                        <td>李四</td>
+                        <td>19</td>
+                        <td>女</td>
+                    </tr>
+                    <tr>
+                        <td>王五</td>
+                        <td>20</td>
+                        <td>男</td>
+                    </tr>
+                    
+                </table>
+            </div>
+            
+        </p>
+        <h2>表单标签</h2>
+        <p>
+            <div>
+                <h3>表单</h3>
+                <h1>填写信息</h1>
+                <form action="https://cn.bing.com" method="post">   <!--form标签,用于表单-->
+                                                                    <!--action属性,用于设置表单提交到的地址-->
+                                                                    <!--method属性,用于设置表单提交方式-->
+                    
+                    <p>
+                        <label for="username">用户名:</label> <!--label标签,用于设置标签的描述-->
+                        <input type="text" name="username" id="username"> <!--input标签,用于输入数据-->
+                    </p>
+                    <p>
+                        <label for="password">密码:</label> <!--密码标签-->
+                        <input type="password" name="password" id="password"></input>
+                    </p>
+                    <p>
+                        <label for="sex">性别:</label>
+                        <input type="radio" name="sex" id="sex">男</input>  <!--radio标签,用于单选-->
+                        <input type="radio" name="sex" id="sex">女</input>
+                    </p>
+                    <p>
+                        <label for="hobby">爱好:</label>
+                        <input type="checkbox" name="hobby" id="hobby">吃饭</input> <!--checkbox标签,用于多选-->
+                        <input type="checkbox" name="hobby" id="hobby">睡觉</input>
+                        <input type="checkbox" name="hobby" id="hobby">打游戏</input>
+                    </p>
+                    <p>
+                        <label for="age">年龄:</label>
+                        <input type="number" number="1" max="90" min="1" step="1" name="age" id="age"></input>
+                    </p>
+                    <p>
+                        <label for="birthday">出生日期:</label>
+                        <input type="date" name="birthday" id="birthday"></input>
+                    </p>
+                    <p>
+                        <label for="address">地址:</label>
+                        <select>    <!--select标签,用于选择-->
+                            <option>上海</option>
+                            <option>北京</option>
+                            <option>广州</option>
+                        </select>
+                    </p>
+                    <p>
+                        <label>上传文件:</label>
+                        <input type="file">
+                    </p>
+                    <p>
+                        <button type="submit">提交</button>
+                        <button type="reset">重置</button>
+                        <button type="button">取消</button>
+                        <input type="button" value="普通按钮">
+                    </p>
+                    
+                </form>
+            </div>
+            <div>
+                <h1>选择服务器</h1>
+                <form action="">
+                    <p>
+                    <label for="serve_browser">选择服务器:</label>
+                    <input type="number" number="1" max="5" min="1" step="1" id="serve_number"></input><!--number标签,用于输入数字-->
+                    </p>
+                    <p>
+                        <button type="submit">提交</button>
+                        <button type="reset">重置</button>
+                        <button type="button">取消</button>
+                    </p>
+
+                </form>
+            </div>
+
+        </p>
+    </p>
 </body>
 </html>
 
