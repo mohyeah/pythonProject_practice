@@ -28,10 +28,15 @@ if __name__ == '__main__':
             request_list = client_request_data.split(" ", maxsplit=2)
             # 获取用户想要访问的资源路径
             request_path = request_list[1]
+
+            # 判断用户请求的request_path是否为"/"
+            if request_path == '/':
+                request_path = "/index.html" # 默认访问首页
+
             # 根据请求的资源路径, 返回指定页面的数据(http响应报文)
-            with open("C:/Users/ruxiang/Desktop/AI Learn/00：人工智能极速就业班课程资料/2.阶段二相关资料/阶段二相关资料/day17/03-代码/source/blog"
+            with open("C:\\Users\\ruxiang\\Desktop\\AI Learn\\00：人工智能极速就业班课程资料\\2.阶段二相关资料\\阶段二相关资料\\day17\\03-代码\\source\\blog"
                       + request_path, "rb") as f:   # 组装请求路径
-                data = f.read()
+                data = f.read() # 以rb方式读取文件数据, 在响应体中不用再转码
 
             # 拼接响应报文数据 => 响应行 + 响应头 + 空行 + 响应体
             response_line = "HTTP/1.1 200 OK\r\n"
